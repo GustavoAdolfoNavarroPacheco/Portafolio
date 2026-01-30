@@ -105,8 +105,10 @@ body {
 
 .pic {
     height: 18vw;
-    margin-right: 2vw;
-    border-radius: 100%;
+    margin-right: 4vw;
+    border-radius: 1vw;
+    box-shadow:
+        0vw 0.1vw 0.3vw rgb(54, 54, 54);
 }
 
 .presentaciontxt {
@@ -130,7 +132,7 @@ body {
     z-index: -1;
 }
 
-habilidades {
+.habilidades {
     font-family: 'StackSansBold';
     font-weight: 700;
     background: linear-gradient(to right,
@@ -141,7 +143,7 @@ habilidades {
     -webkit-text-fill-color: transparent;
 }
 
-.presentacion a {
+.button {
     width: 10vw;
     height: 2.5vw;
     cursor: pointer;
@@ -162,7 +164,7 @@ habilidades {
         0vw 0.1vw 0.3vw rgb(54, 54, 54);
 }
 
-.presentacion a:hover {
+.button:hover {
     background: rgb(231, 228, 255);
     color: #0c0936;
     border-color: #0c0936;
@@ -263,10 +265,11 @@ h1::after {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto;
-    gap: 1vw;
+    gap: 2vw;
     margin-top: 2vw;
     justify-content: center;
     align-items: center;
+    
 }
 
 .divisor2 div {
@@ -283,6 +286,7 @@ h1::after {
             rgb(212, 206, 255) 100%);
     opacity: 0.9;
     transition: all 0.4s ease;
+    box-shadow: 0 0.6vw 1vw rgba(0, 0, 0, 0.2);
 }
 
 .divisor2 div h2 {
@@ -320,22 +324,164 @@ h1::after {
 
 #Proyectos {
     display: flex;
-
 }
 
 .ProyectosSection {
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.ProyectosFrame {
+    width: 80vw;
+    height: 25vw;
+    display: flex;
+    gap: 3.5vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.Proyecto {
+    width: 35vw;
+    height: 22vw;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right,
+            rgb(212, 206, 255) 0%,
+            #cecbf3 40%,
+            rgb(212, 206, 255) 100%);
+    border-radius: 1.5vw;
+    box-shadow: 0 0.6vw 1vw rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    align-items: center;
+    justify-content: center;
+    font-family: 'StackSansBold';
+    margin-top: 2vw;
+}
+
+.Proyecto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.6vw 1vw rgba(0, 0, 0, 0.2);
+}
+
+.ProyectoIMG {
+    width: auto;
+    height: 18vw;
+    border-top-right-radius: 1vw;
+    border-top-left-radius: 1vw;
+    margin-top: -0.8vw;
+}
+
+.OverFrame {
+    width: 32.5vw;
+    height: 8vw;
+    background: linear-gradient(to right,
+            rgb(212, 206, 255) 0%,
+            #cecbf3 40%,
+            rgb(212, 206, 255) 100%);
+    margin-top: -9vw;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1vw;
+    font-size: 1vw;
+}
+
+.topOverFrame {
+    width: 32vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17.55vw;
+    font-size: 1.5vw;
+    padding-bottom: 1vw;
+}
+
+.topOverFrame2 {
+    width: 32vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16.74vw;
+        font-size: 1.5vw;
+    padding-bottom: 1vw;
+}
+
+.button2 {
+    width: 7vw;
+    height: 2vw;
+    cursor: pointer;
+    border-radius: 0.5vw;
+    background: linear-gradient(90deg,
+            #101331 0%,
+            #0c0936 40%,
+            #07121d 100%);
+    color: white;
+    font-family: 'StackSansSemiBold';
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    box-shadow:
+        0vw 0.1vw 0.3vw rgb(54, 54, 54);
+    gap: 0.6vw;
+}
+
+.button2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.6vw 1vw rgba(0, 0, 0, 0.2);
+}
+
+.github {
+    width: 1.2vw;
+}
 
 .Contactame {
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.buttonsTop {
+    display: flex;
+    gap: 2vw;
+}
+
+.buttons {
+    width: 4vw;
+    height: 4vw;
+    cursor: pointer;
+    border-radius: 100%;
+    background: linear-gradient(90deg,
+            #101331 0%,
+            #0c0936 40%,
+            #07121d 100%);
+    color: white;
+    font-family: 'StackSansSemiBold';
+    font-size: 1vw;
+    display: flex;
+    margin-top: 2vw;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    box-shadow:
+        0vw 0.1vw 0.3vw rgb(54, 54, 54);
+    gap: 0.6vw;
+}
+
+.buttons > img {
+    width: 2vw;
+}
+
+.buttons:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.6vw 1vw rgba(0, 0, 0, 0.2);
 }
